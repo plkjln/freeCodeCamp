@@ -1,0 +1,54 @@
+html,
+body {
+  background-color: #c8c0db;
+  text-align: center;
+  font-family: "Raleway", Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+#form-outer {
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 950px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.label {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.input {
+  height: 25px;
+  width: 280px;
+  margin: 10px;
+  border: 1px solid #000000;
+}
+.dropdown {
+  height: 25px;
+  width: 140px;
+  margin: 10px;  
+  border: 1px solid #000000;
+}
+.userRatings-area{
+  display: inline-block;
+  text-align: left;
+}
+.userRatings,
+input[type="checkbox"]{
+  float: left;
+  margin-right: 5px;
+}
+.radio, .checkbox {
+  position: relative;
+  left: 200px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+

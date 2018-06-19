@@ -1,0 +1,61 @@
+
+<html>
+<h1 id="title"> Survey Form </h1>
+<p id="description">
+  Please rate us and provide your valuable inputs so to improve our site. Do stay tuned for more travel ideas!
+</p>
+<div id="form-outer">
+  <form id="survey-form" method="GET" action="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    <div>
+      <label id="name-label" for="name" class ="label"> Name:</label>
+      <input class="input" id="name" type="text" placeholder="Enter your name" required> </input>
+    </div>
+
+    <div>
+      <label id="email-label" for="email" class ="label">E-mail:</label>
+      <input class="input" id="email" type="email" placeholder="example@domain.com" required> </input>
+    </div>
+
+    <div>
+      <label id="number-label" for="number" class ="label">Age:</label>
+      <input class="input" id="number" type="number" min="1" max="100" placeholder="Enter your age" required>
+      </input>
+    </div>
+
+    <div class ="label">
+        <label for="currentPos">What describes you best?</label>
+        <select id="dropdown" name="currentPos" class="dropdown" required>
+      <option disabled value>Select an option</option>
+      <option value="ideas">Avid Traveller</option>
+      <option value="insta">Just for Instagram</option>
+      <option value="short">Short 2 day travels</option>
+      <option value="honeymoon">Honeymoon Locations</option>
+      <option value="cruise">Cruise ideas only</option>
+      <option value="other">Other</option>
+    </select>
+    </div>
+
+    <div class="userRatings-area" style="display: inline-block;">
+      <label class ="label" for="userRatings">How likely are you to recommend TheGraphiteCar.wordpress.com to a friend?</label>
+      
+      <ul style="list-style: none;">
+        <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+        <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+        <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="userRatings" ></label></li>
+      </ul>
+    </div>
+
+
+    <div>
+
+      <label id="comments-label" for="comments">Any Comments or Suggestions:</label>
+      <textarea id="comments" class="input" style="height:50px;resize:vertical;" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <br>
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</div>
+
+</html>
