@@ -1,171 +1,88 @@
-
-<!-- Responsive Web Design Projects - Build a Personal Portfolio Webpage -->
-
 <html>
-<body>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <h2><a href="#">National Parks in United States</a></h2>
+<!-- NAVIGATION BAR -->  
+    <nav>
+        <ul id="navbar"> 
+            <li><a class="nav-link" href="#welcome-section" rel="internal">About Me</a></li>
+            <li><a class="nav-link" href="#projetcs" rel="internal">Projects</a></li>
+            <li><a class="nav-link" href="#contact" rel="internal">Contact</a></li>
+        </ul>  
+
+    </nav>    
+
+<!-- WELCOME SECTION -->
+    <div id="welcome-section">
+        <h1> Hi, welcome to my Page.</h1>
+        <p> I like traveling and blogging about it. Check out my site <a href="http://thegraphitecar.wordpress.com"> here.</a></p>
+    </div>
+<!-- PROJECTS -->
+    <div id="projects">
+        <h2 class="work-header">These are some of my projects.</h2>
+        <div class="container-fluid well">
+        <!-- First row -->
+        <div class="row"> 
+            <!-- Image 1,1 -->
+            <div class="col-md-4">
+                <div class="thumbnail">
+                   <a href="https://codepen.io/plkjln/full/XZNBKm" target="_blank" class="project project-tile">
+                      <img src="http://via.placeholder.com/350x150">
+                      <div class="caption">
+                          <p>Tribute Page</p>
+                      </div> 
+                  </a>  
+                </div>
+            </div>
+        
+            <!-- Image 1, 2 -->
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="https://codepen.io/plkjln/full/YeEwpX" target="_blank" class="project project-tile">
+                      <img src="http://via.placeholder.com/350x150">
+                      <div class="caption">
+                          <p>Random Quote Generator</p>
+                      </div> 
+                  </a>  
+                </div>
+            </div>
+            <!-- Image 1, 3 -->
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="https://codepen.io/plkjln/full/GQQbpy" target="_blank" class="project project-tile">
+                        <img src="http://via.placeholder.com/350x150">
+                        <div class="caption">
+                            <p>Wiki Viewer</p>
+                        </div> 
+                    </a>  
+                </div>
+            </div>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a target="_blank" href="https://www.wordpress.com" ><h4><i class="fa fa-wordpress fa-fw"></i></h4></a></li>
-            <li><a target="_blank" href="https://www.flickr.com/nationalparkservice"><h4><i class="fa fa-flickr fa-fw"></i></h4></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com"><h4><i class="fa fa-linkedin fa-fw"></i></h4></a></li>
-            <li><a target="_blank" href="https://www.github.com"><h4><i class="fa fa-github fa-fw"></i></h4></a></li>
-            <li><a href="#ContactUs"><h4><i class="fa fa-envelope-square fa-fw"></i></h4></a></li>
-        </ul>
+        <!-- Second row -->
+        <div class="row" align="center">   
+            <div class="col-md-12">
+                <div class="thumbnail">
+                    <a href="https://codepen.io/plkjln/" target="_blank" class="project project-tile">
+                      <button type="submit"> All Projects </button>
+                    </a>  
+                </div>
+            </div>
+        </div>
+      </div>
+            
     </div>
-</nav>
- 
-<div class="container-fluid well">
- 
-<div class="row">
-<div class="col-md-1"></div>
-<div class="col-md-10">
-<!-- About Me Container -->
-<div class="container-fluid well">
-    <section id="welcome-section">welcome-section</section> 
-    <h1>Introduction</h1>
-    <div class="row">
-	    <div class="col-md-10">
-	        <p>National parks are the “spacious skies” and “mountain majesties” of elementary school choirs. They’re living postcards from adventurers who had the foresight to preserve natural wonders for those who followed. The 59 U.S. parks are stark and arid, elevated and lush, watery and forbidding. They’re wild. And perhaps most important, they’re common ground. The vast acreage managed by the National Park Service may be the only place where chasms unite us. Park Service lands are as diverse as the visitors they serve and the flora, fauna, ground and water they protect.
-	    Na  tional parks are an American superlative — beautiful to the extreme. </p>
-	        <h4>Must Visit National Parks</h4>
-	        <ul>
-	            <li>Yosemite National Park</li>
-	            <li>Death Valley National Park</li>
-	            <li>Olympic National Park</li>
-	            <li>Grand Canyon</li>
-	            <li>Crater Lake</li>
-	            <li>Yellowstone National Park</li>
-	            <li>Grand Teton National Park</li>
-	            <li>Glacier National Park</li>
-	        </ul>
-	    </div>
-	    <div class="col-md-2">
-	    	<img class="img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/US-NationalParkService-Logo.svg/786px-US-NationalParkService-Logo.svg.png">
-	    	<div class="caption">
-	    	    <p class="text-center">Logo for <abbr title="National Park Service">NPS</abbr></p>
-	    	</div>
-	    </div>
-    </div>
+<!-- PROFILE LINK -->
+    <div id="contact" class="contact">
+        <div class="header">
+            <h1>Get in touch for travel ideas!!</h1>
+        </div>
+        <a href="https://facebook.com" target="_blank" class="contact-details">Facebook</a>
+        <a id='profile-link' href="https://github.com/plkjln" target="_blank" class="contact-details">GitHub</a>
+        <a href="https://twitter.com" target="_blank" class="contact-details">Twitter</a>
+        <a href="mailto:example@example.com" class="contact-details">E-mail</a>
+        <a href="tel:123-456-7890" class="contact-details">Call me</a>
 </div>
- 
- 
-<!-- Portfolio Container -->
-<div class="container-fluid well">
-<h3>Popular Destinations</h3>
- 
-<div class="row"> <!-- First row -->
-    <!-- Image 1,1 -->
-    <div class="col-md-4">
-	    <div class="thumbnail">
-	        <img src="https://farm8.staticflickr.com/7305/27607464131_8135df53ba_k.jpg">
-		    <div class="caption">
-		        <p>Hoh Rain Forest, Olympic National Park</p>
-		    </div>
-	    </div>
-    </div>
-
-    <!-- Image 1, 2 -->
-    <div class="col-md-4">
-	    <div class="thumbnail">
-	        <img src="https://farm2.staticflickr.com/1696/25705690301_7a0e10e1e0_k.jpg">
-		    <div class="caption">
-		        <p>Space Needle, Seattle</p>
-		    </div>
-	    </div>
-    </div>
-      
-    <!-- Image 1, 3 -->
-    <div class="col-md-4">
-	    <div class="thumbnail">
-	        <img src="https://farm2.staticflickr.com/1529/25008347163_f8b765cd3d_k.jpg">
-		    <div class="caption">
-		        <p>Death Valley</p>
-		    </div>
-	    </div>
-    </div>
-</div>
-
-<!-- Second row: Image 2, 1 -->
-<div class="row">
-    <div class="col-md-4">
-	    <div class="thumbnail">
-	        <img src="https://farm6.staticflickr.com/5795/22782770741_259886df0b_k.jpg">
-		    <div class="caption">
-		        <p>The Wave</p>
-		    </div>
-	    </div>
-    </div>
   
-    <!-- Image 2, 2 -->
-    <div class="col-md-4">
-	    <div class="thumbnail">
-	        <img src="https://farm3.staticflickr.com/2828/33724137992_bd8be62b65_k.jpg">
-		    <div class="caption">
-		        <p>Horse Shoe Bend</p>
-		    </div>
-	    </div>
-    </div>
-  
-    <!--- Image 2, 3 -->
-    <div class="col-md-4">
-	    <div class="thumbnail">
-	        <img src="https://farm1.staticflickr.com/679/31653922553_6713c8038f_k.jpg">
-		    <div class="caption">
-		        <p>Monument Valley</p>
-		    </div>
-	    </div>
-    </div>
-</div> 
-</div>
- 
- 
-<!-- Visitors  Container -->
-<div class="container-fluid well">
-	<h3>Visitors to National Park</h3>
-	<div class="thumbnail">
-	    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/NationalParks.forwiki.pdf/page1-1650px-NationalParks.forwiki.pdf.jpg">
-		<div class="caption">
-		    <p class="text-center">Representation on Number of Visitor to National Park</p>
-		</div>
-	</div>
-</div>
-<!-- Visitors  Container End -->
-
-<!--- Contact  Container -->
-<a name="ContactUs">
-    <div class="container-fluid well">
-        <h3>Contact Us:</h3>
-        <div class="form-group">
-            <input type="text" placeholder="Name">
-        </div>
-        <div class="form-group">
-            <input type="email" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <textarea placeholder="Enter your message Here ..."></textarea>
-        </div>
-        <div class="form-group">
-            <button type="button" class="btn btn-primary">Submit</button>
-        </div>
-    </div>
-</a>
-<!--- Contact  Container Ends -->
-</div>
-
-<div class="col-md-1"></div>
-
-</div>
- 
-
-<footer>
-    <hr>
-    <h5 class="text-center"> Free Code Camp - Product Landing Page - Completed on June 25, 2018 by PlkJln</h5>
-</footer>
-
-</body>
+<!-- FOOTER -->  
+    <footer id="footer">
+        <hr>
+        <h5 class="text-center"> Free Code Camp: Responsive Web Design Projects - Build a Personal Portfolio Webpage - Completed on June 26, 2018</h5>
+    </footer>
 </html>
