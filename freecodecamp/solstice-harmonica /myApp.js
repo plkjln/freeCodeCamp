@@ -9,7 +9,7 @@ var app = express();
 
 
 /** 1) Meet the node console. */
-console.log("Hello World");
+/*console.log("Hello World");*/
 
 /** 2) A first working Express Server */
 /*app.get("/", function(req, res) {
@@ -30,7 +30,7 @@ console.log("Hello World");
   });*/
 
 /** 6) Use the .env file to configure the app */
-var response = "Hello json".toUpperCase(); // now becomes "HELLO JSON"
+/*var response = "Hello json".toUpperCase(); // now becomes "HELLO JSON"
 app.get("/json", function(req, res) {
   if (process.env.MESSAGE_STYLE === "uppercase") {
     response = "Hello json".toUpperCase();
@@ -39,16 +39,21 @@ app.get("/json", function(req, res) {
    }
   res.json({"message": response});
   });
- 
+ */
 /** 7) Root-level Middleware - A logger */
 //  place it before all the routes !
 
+app.use(function middleware(req, res, next) {
+  var string = req.method + ' ' + req.path + ' - ' + req.ip;
+  console.log("string is: ",string);
+  res.json({"message": string});  
+  res.send({"message": string});  
+  next();
+});
 
 /** 8) Chaining middleware. A Time server */
 
-
 /** 9)  Get input from client - Route parameters */
-
 
 /** 10) Get input from client - Query parameters */
 // /name?first=<firstname>&last=<lastname>
